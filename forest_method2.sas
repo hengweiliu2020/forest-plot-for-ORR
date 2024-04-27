@@ -150,7 +150,7 @@ proc template;
 		begingraph;
 			entrytitle textattrs=(size=10.9pt weight=bold) halign = center "Forest plot of ORR with 95% CI";
 			entrytitle " ";
-			layout overlay/yaxisopts=(linearopts=(tickvaluelist=(1 2 3 4 5 6 7 8 9)) label=' ' tickvaluealign=left)
+			layout overlay/yaxisopts=(linearopts=(tickvaluelist=(1 2 3 4 5 6 7 8 9)) label=' ' tickvaluehalign=left)
 				xaxisopts=(linearopts=(tickvaluepriority=true tickvaluesequence=(start=0 end=100 increment=10)) offsetmin= 0.2 offsetmax=0.1 label=' ');
 				axistable y=start value=orr_ci / valueattrs=(size=10 ) display=(values);
 				scatterplot x=orr y=start /  
